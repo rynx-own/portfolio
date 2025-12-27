@@ -1,7 +1,7 @@
-// Main JavaScript for Portfolio Website
+// Main JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Loading Screen - Cyberpunk
+    // Loading Screen
     const loadingScreen = document.getElementById('loadingScreen');
 
     // Hide loading screen after page loads with smooth transition
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Navbar scroll transparency
+    // Navigasi pas di scroll transparan
     const navbarNew = document.querySelector('.navbar-new');
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return new bootstrap.Tooltip(tooltipTriggerEl);
     });
 
-    // Scroll Animation Observer
+    // animasi scroll observer
     const observerOptions = {
         root: null,
         rootMargin: '0px',
