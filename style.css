@@ -1,4 +1,4 @@
-/* Custom Styles for Portfolio Website */
+/* cape anjink */
 
 /* Base Styles */
 :root {
@@ -15,7 +15,7 @@
     --card-bg: #1a1a1a;
 }
 
-/* === FULL PAGE BACKGROUND GRADIENT NYATU === */
+/* === background/lb === */
 html, body {
   margin: 0;
   padding: 0;
@@ -36,7 +36,6 @@ section {
   background: transparent !important;
 }
 
-/* efek glow biar tetap ada warna nuansa lembut kayak sebelumnya */
 body::before {
   content: '';
   position: fixed;
@@ -92,7 +91,7 @@ body.light-mode {
     color: var(--purple);
 }
 
-/* New Navigation */
+/* navigasi */
 .navbar-new {
     position: fixed;
     top: 0;
@@ -157,19 +156,25 @@ body.light-mode {
 }
 
 .nav-dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(20, 20, 30, 0.92);
-    border-radius: 18px;
-    padding: 14px 28px;
-    margin-top: 12px;
-    border: 1px solid rgba(168, 85, 247, 0.25);
-    min-width: 280px;
-    backdrop-filter: blur(15px);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(20, 20, 30, 0.92);
+  border-radius: 50px; 
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  padding: 14px 28px;
+  margin-top: 12px;
+  backdrop-filter: blur(15px);
+  display: none;
+  width: 96%; 
+  max-width: 95%; 
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s ease;
 }
+
+
 
 .nav-dropdown.active {
     display: block;
@@ -409,7 +414,7 @@ body.light-mode {
     }
 }
 
-/* Cyberpunk Loading Screen */
+/* Loading Screen */
 .cyberpunk-loader-wrapper {
     position: fixed;
     top: 0;
@@ -679,7 +684,7 @@ body.light-mode {
     }
 }
 
-/* Typed.js Cursor Styling */
+/* Typed.js Cursor style wkwk */
 .typed-cursor {
     color: var(--primary);
     animation: blink 0.7s infinite;
@@ -707,7 +712,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.1rem;
 }
 
-/* Navigation */
+/* Navigasi */
 .navbar {
     background-color: rgba(10, 10, 10, 0.95) !important;
     backdrop-filter: blur(10px);
@@ -845,7 +850,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* About Section */
+/* bagian About me  */
 .about-section {
     background: transparent;
     padding: 100px 0;
@@ -948,7 +953,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 2rem;
 }
 
-/* Skill Logos with Animation */
+/* logo skil*/
 .logo-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
@@ -987,7 +992,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 5px;
 }
 
-/* JavaScript logo colors */
+/* Js logo */
 .fa-js {
     color: #f7df1e;
 }
@@ -1020,7 +1025,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #f05032;
 }
 
-/* Projects Section */
+/* Projek */
 .project-card {
     background: var(--dark-light);
     padding: 30px;
@@ -1098,7 +1103,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--light);
 }
 
-/* Music Section */
+/* Musik */
 .music-section {
   background: radial-gradient(circle at 50% 20%, rgba(168, 85, 247, 0.15), transparent 70%),
               linear-gradient(135deg, #0a0a0a 0%, #1a0a2e 100%);
@@ -1269,7 +1274,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary);
 }
 
-/* Social Logos with Animation */
+/* logo sosmed */
 .social-logos {
     margin-top: 40px;
 }
@@ -1311,7 +1316,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 10px 20px rgba(0, 255, 136, 0.2);
 }
 
-/* Specific colors for social logos */
+/* warna logo sosmed */
 .fa-whatsapp:hover {
     color: #25d366;
 }
@@ -1344,7 +1349,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9rem;
 }
 
-/* PERBAIKAN: Footer copyright di tengah */
+
 .footer .row {
     justify-content: center !important;
     text-align: center;
@@ -1436,7 +1441,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--purple);
 }
 
-/* Scroll Animation Classes */
+/* animasi scroll */
 .animate-on-scroll {
     opacity: 0;
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1446,7 +1451,7 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
 }
 
-/* Zoom In Animation */
+/* animasi zoom in */
 .zoom-in {
     transform: scale(0.9);
 }
@@ -1455,7 +1460,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1);
 }
 
-/* Fade Up Animation */
+/* animais fade up */
 .fade-up {
     transform: translateY(40px);
 }
@@ -1464,7 +1469,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(0);
 }
 
-/* Slide In Left Animation */
+/* animasi slide dari kiri */
 .slide-in-left {
     transform: translateX(-60px);
 }
@@ -1473,7 +1478,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateX(0);
 }
 
-/* Slide In Right Animation */
+/* aniamsi dari kanan */
 .slide-in-right {
     transform: translateX(60px);
 }
@@ -1482,7 +1487,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateX(0);
 }
 
-/* Scale Up Animation */
+/* Scale Up animasi */
 .scale-up {
     transform: scale(0.7);
 }
@@ -1491,7 +1496,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1);
 }
 
-/* Rotate In Animation */
+/* animasi rotasi */
 .rotate-in {
     transform: rotate(-10deg) scale(0.9);
 }
@@ -1500,7 +1505,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: rotate(0) scale(1);
 }
 
-/* Staggered Animation Delays */
+/* Staggered Animasi Delays */
 .animate-on-scroll:nth-child(1) { transition-delay: 0s; }
 .animate-on-scroll:nth-child(2) { transition-delay: 0.4s; }
 .animate-on-scroll:nth-child(3) { transition-delay: 0.5s; }
